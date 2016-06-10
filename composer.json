@@ -1,0 +1,22 @@
+{
+    "name": "yvrmichael/appno-behat",
+    "description": "Basic Behat package for Appnovation Web Test Automation",
+    "require": {
+        "behat/behat": ">v2.4@stable",
+        "orangedigital/business-selector-extension": "dev-master",
+        "drupal/drupal-extension": "~1.0",
+        "behat/common-formatters": "1.2.*",
+        "webignition/json-pretty-print": "@dev",
+        "hasbridge/json-schema-validator": "@dev"
+    },
+    "authors": [
+        {
+            "name": "Michael Murphy",
+            "email": "michaelmurphy@appnovation.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "config": {
+        "bin-dir": "bin/"
+    }
+}
