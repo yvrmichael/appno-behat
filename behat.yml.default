@@ -1,0 +1,22 @@
+default:
+  context:
+    parameters:
+      javascript_session: selenium
+      browser: firefox
+      show_cmd: open %s
+  extensions:
+    OrangeDigital\BusinessSelectorExtension\Extension:
+      urlFilePath: urls.yml
+      selectorFilePath: selectors.yml
+      assetPath: path
+      timeout: 30
+      contexts:
+        UIBusinessSelector: ~
+    Behat\MinkExtension\Extension:
+      base_url: "https://www.example.com"
+      default_session: goutte
+      goutte: ~
+      selenium2:
+        browser: firefox
+    Drupal\DrupalExtension\Extension:
+      blackbox: ~
